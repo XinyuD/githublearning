@@ -30,6 +30,8 @@
         [self.window makeKeyAndVisible];
     }
     
+    NSLog(@"测试分支");
+    
 }
 
 
