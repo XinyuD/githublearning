@@ -29,6 +29,7 @@
         self.window.rootViewController = VC;
         [self.window makeKeyAndVisible];
     }
+    NSLog(@"添加分支dev");
     
 }
 
