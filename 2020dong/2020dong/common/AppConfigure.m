@@ -26,11 +26,12 @@
     return [[UIDevice currentDevice].systemVersion floatValue];
 }
 
+///是否弃用
 +(double) GetYStartPos
 {
     if ([AppConfigure iOSVersion] >= 7.0)
     {
-        if (isFullScreen)
+        if (kIsBangsScreen)
         {
             return 44;
         }
@@ -84,6 +85,28 @@
     else if([[UIDevice currentDevice] resolution]==UIDeviceResolution_iPadStandard)
     {
         return 768.0/320.0;
+    }
+    return rate;
+}
+
++(CGFloat) GetHeightAdaptRate
+{
+    CGFloat rate = 1;
+    if([[UIDevice currentDevice] resolution] == UIDeviceResolution_iPhoneRetina4)
+    {
+        rate = 568/667.0;
+    }
+    if([[UIDevice currentDevice] resolution] == UIDeviceResolution_iPhoneRetina55)
+    {
+        rate = 736/667.0;
+    }
+    if([[UIDevice currentDevice] resolution] == UIDeviceResolution_iPhoneRetina58)
+    {
+        rate = 812/667.0;
+    }
+    else if([[UIDevice currentDevice] resolution]==UIDeviceResolution_iPhoneRetina61 || [[UIDevice currentDevice] resolution]==UIDeviceResolution_iPhoneRetina65 )
+    {
+        rate = 896/667.0;
     }
     return rate;
 }

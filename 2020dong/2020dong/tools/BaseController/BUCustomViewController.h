@@ -16,9 +16,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-typedef void(^BackAction)();
+typedef void(^BackAction)(void);
 
-@interface BUCustomViewController : UIViewController<UIAlertViewDelegate,BURequestDelegate>
+@interface BUCustomViewController : UIViewController<UIAlertViewDelegate>
 {
     BUVerticalAlignLabel* m_pNameLabel;        //页面红条上标题
     UIButton* m_pBackButton;                   //返回按钮

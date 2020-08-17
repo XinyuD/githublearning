@@ -9,9 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "AFTabBarItem.h"
 
-#define kTitleNormalColor [UIColor grayColor]
-#define kTitleSelectedColo [UIColor grayColor]
-#define kTitleFont [UIFont systemFontOfSize:10.0f]
+#define kTitleNormalColor [UIColor blackColor]
+#define kTitleSelectedColo [UIColor blueColor]
+#define kTitleFont [UIFont systemFontOfSize:13.0f]
 
 @interface AFTabBarViewController : UITabBarController
 

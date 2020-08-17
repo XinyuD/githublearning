@@ -21,20 +21,16 @@
     if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone){
         if (scale == 3.0f) {
             //plus
-            if (pixelHeight == 2208.0f && pixelWidth == 1242.0f)
+            if  ((pixelHeight == 2208.0f && pixelWidth == 1242.0f) ||
+                (pixelHeight == 1242.0f && pixelWidth == 2208.0f))
                 resolution = UIDeviceResolution_iPhoneRetina55;
-            
-            if (pixelHeight == 1242.0f && pixelWidth == 2208.0f)
-                resolution = UIDeviceResolution_iPhoneRetina55;
-            //x xs
-            if (pixelHeight == 1125.0f && pixelWidth == 2436.0f)
+            //x xs 11pro
+            if ((pixelHeight == 1125.0f && pixelWidth == 2436.0f) ||
+                (pixelHeight == 2436.0f && pixelWidth == 1125.0f))
                 resolution = UIDeviceResolution_iPhoneRetina58;
-            if (pixelHeight == 2436.0f && pixelWidth == 1125.0f)
-                resolution = UIDeviceResolution_iPhoneRetina58;
-            //xs max
-            if (pixelHeight == 1242.0f && pixelWidth == 2688.0f)
-                resolution = UIDeviceResolution_iPhoneRetina65;
-            if (pixelHeight == 2688.0f && pixelWidth == 1242.0f)
+            //xs max 11pro max
+            if ((pixelHeight == 1242.0f && pixelWidth == 2688.0f)
+                || (pixelHeight == 2688.0f && pixelWidth == 1242.0f))
                 resolution = UIDeviceResolution_iPhoneRetina65;
         }else if (scale == 2.0f) {
             //4s
@@ -48,7 +44,7 @@
                 resolution = UIDeviceResolution_iPhoneRetina47;
             //xr
             else if ( (pixelHeight == 828.0f && pixelWidth == 1792.0f) || (pixelHeight == 1792.0f && pixelWidth == 828.0f))
-                resolution = UIDeviceResolution_iPhoneRetina47;
+                resolution = UIDeviceResolution_iPhoneRetina61;
         } else if (scale == 1.0f && pixelHeight == 480.0f)
             resolution = UIDeviceResolution_iPhoneStandard;
         

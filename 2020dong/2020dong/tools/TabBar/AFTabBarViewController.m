@@ -8,14 +8,17 @@
 
 #import "AFTabBarViewController.h"
 
-CGFloat const fTabBarHeight = 49.0f;
+//CGFloat const fTabBarHeight = 49.0f;
 
-#define  Yposition  self.view.frame.size.height - TabbarHeight
+//#define  Yposition  self.view.frame.size.height - TabbarHeight
+
+#define  Yposition  self.view.frame.size.height - TabbarSafeBottomMargin - TabbarHeight
 
 @interface AFTabBarViewController ()
 {
     UIImageView *m_pTabBarBgImageV;
     AFTabBarItem *m_pSelectedBtn;
+    CGFloat startCustomTabPosition ;
 }
 
 @end
@@ -27,6 +30,7 @@ CGFloat const fTabBarHeight = 49.0f;
     self = [super init];
     if (self)
     {
+        startCustomTabPosition = self.view.frame.size.height - TabbarSafeBottomMargin - TabbarHeight;
         [self LoadTabBar];
     }
     return self;
@@ -58,9 +62,11 @@ CGFloat const fTabBarHeight = 49.0f;
 #pragma mark -- private method
 - (void)LoadTabBar
 {
-    m_pTabBarBgImageV = [[UIImageView alloc]initWithFrame:CGRectMake(0, Yposition, self.view.frame.size.width, TabbarHeight)];
-    NSLog(@"%f",TabbarHeight);
-    m_pTabBarBgImageV.backgroundColor = [UIColor whiteColor];
+    UIView *line = [[UIView alloc] initWithFrame:CGRectMake(0, startCustomTabPosition, self.view.frame.size.width, 0.5)];
+    line.backgroundColor = [UIColor colorWithRed:232%256/255.0 green:232%256/255.0 blue:232%256/255.0 alpha:1];
+    [self.view addSubview:line];
+    m_pTabBarBgImageV = [[UIImageView alloc]initWithFrame:CGRectMake(0, startCustomTabPosition+0.5, self.view.frame.size.width, TabbarHeight)];
+    m_pTabBarBgImageV.backgroundColor = [UIColor colorWithWhite:1 alpha:0.5];
     m_pTabBarBgImageV.userInteractionEnabled = YES;
     [self.view addSubview:m_pTabBarBgImageV];
     
@@ -89,7 +95,7 @@ CGFloat const fTabBarHeight = 49.0f;
     for (NSInteger i = 0; i < _propViewControllerClasses.count; i ++)
     {
         AFTabBarItem *pItemBtn = [m_pTabBarBgImageV viewWithTag:100 + i];
-        pItemBtn.frame = CGRectMake(fWidth * i, 0, fWidth, 49.0);
+        pItemBtn.frame = CGRectMake(fWidth * i, 0, fWidth, TabbarHeight);
         if (i == 0)
         {
             [self SelectViewControllerItem:pItemBtn];

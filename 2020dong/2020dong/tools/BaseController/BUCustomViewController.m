@@ -70,7 +70,7 @@
         self.automaticallyAdjustsScrollViewInsets = NO;
     
     m_pTopBar =[[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 45+[AppConfigure GetYStartPos])];
-    m_pTopBar.backgroundColor = [UIColor whiteColor];
+    m_pTopBar.backgroundColor = [UIColor colorWithWhite:1 alpha:0.5];
     [self.view addSubview:m_pTopBar];
     
     //Name Lable
@@ -135,6 +135,7 @@
 -(void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+    [self.view bringSubviewToFront:m_pTopBar];
     self.navigationController.navigationBar.hidden = YES;
 }
 
@@ -255,5 +256,6 @@
 {
     [m_pLoadingView startAnimating];
 }
+
 
 @end

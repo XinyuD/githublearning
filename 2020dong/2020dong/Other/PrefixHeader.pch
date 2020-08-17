@@ -20,6 +20,7 @@
 #import "Singleton.h"
 #import "UIViewExt.h"
 #import "UIKit+AFNetworking.h"
+#import "BUCustomViewController.h"
 #endif
 
 

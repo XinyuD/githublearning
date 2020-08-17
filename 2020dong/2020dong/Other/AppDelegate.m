@@ -7,9 +7,13 @@
 //
 
 #import "AppDelegate.h"
+#import "FirstController.h"
+#import "SecondController.h"
 
 @interface AppDelegate ()
-
+{
+    
+}
 @end
 
 @implementation AppDelegate
@@ -19,24 +23,33 @@
     // Override point for customization after application launch.
     NSLog(@"fix bug 1.0");
     NSLog(@"dev");
+    
+    
+//    FirstController *vc = [[FirstController alloc] init];
+//    UITabBarController *tab = [[UITabBarController alloc] init];
+//    UINavigationController *nv = [[UINavigationController alloc] initWithRootViewController:vc];
+//    tab.viewControllers = @[nv];
+//    tab.tabBarItem.title = @"page1";
+   
+
+
+    if (!self.window)
+    {
+        self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+        self.window.backgroundColor = [UIColor whiteColor];
+        
+        [self.window makeKeyAndVisible];
+    }
+    
+    
+    _mainTc = [[AFTabBarViewController alloc]init];
+    _mainTc.propViewControllerClasses = @[[SecondController class]];
+//        _mainTc.propTabBarNormalImages = @[@"tabmain.png",@"fjqz_a.png",@"wd_a.png"];
+//        _mainTc.propTabBarSelectedImages = @[@"tabmains.png",@"fjqz_b.png",@"wd_b.png"];
+    _mainTc.propTabBarTitles = @[@"主页"];
+    self.window.rootViewController = _mainTc;
+        
     return YES;
-}
-
-
-#pragma mark - UISceneSession lifecycle
-
-
-- (UISceneConfiguration *)application:(UIApplication *)application configurationForConnectingSceneSession:(UISceneSession *)connectingSceneSession options:(UISceneConnectionOptions *)options {
-    // Called when a new scene session is being created.
-    // Use this method to select a configuration to create the new scene with.
-    return [[UISceneConfiguration alloc] initWithName:@"Default Configuration" sessionRole:connectingSceneSession.role];
-}
-
-
-- (void)application:(UIApplication *)application didDiscardSceneSessions:(NSSet<UISceneSession *> *)sceneSessions {
-    // Called when the user discards a scene session.
-    // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
-    // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
 }
 
 

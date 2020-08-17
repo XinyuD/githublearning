@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		1E74E14DCA30170D96B3708D /* Pods_2020dong.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CBAFC48209613ADC692418D /* Pods_2020dong.framework */; };
 		4673E7386B764BF3AB65C0A1 /* Pods_2020dongUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB48C5252CFC8772B1A1682E /* Pods_2020dongUITests.framework */; };
+		8B69A93624EA6BF70063743A /* SecondView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B69A93524EA6BF70063743A /* SecondView.m */; };
+		8B69A93924EA6E350063743A /* SecondController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B69A93824EA6E350063743A /* SecondController.m */; };
 		8B7884252477C1A4004ABF22 /* _020dongTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7884242477C1A4004ABF22 /* _020dongTests.m */; };
 		8B7884302477C1A4004ABF22 /* _020dongUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B78842F2477C1A4004ABF22 /* _020dongUITests.m */; };
 		8B78844C2478C83A004ABF22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B7884452478C83A004ABF22 /* Assets.xcassets */; };
-		8B78844D2478C83A004ABF22 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7884462478C83A004ABF22 /* SceneDelegate.m */; };
-		8B78844E2478C83A004ABF22 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B7884472478C83A004ABF22 /* Default-568h@2x.png */; };
 		8B78844F2478C83A004ABF22 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7884482478C83A004ABF22 /* main.m */; };
 		8B7884502478C83A004ABF22 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7884492478C83A004ABF22 /* AppDelegate.m */; };
 		8B8233A224790D6100588B7B /* BUVerticalAlignLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B82336524790D6000588B7B /* BUVerticalAlignLabel.m */; };
@@ -50,6 +50,13 @@
 		8B8233D224790D9700588B7B /* MBProgressHUD+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8233C424790D9700588B7B /* MBProgressHUD+Add.m */; };
 		8B8233D324790D9700588B7B /* BUCoreUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8233C524790D9700588B7B /* BUCoreUtility.m */; };
 		8B8233D424790D9700588B7B /* NSString+IntValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8233C724790D9700588B7B /* NSString+IntValue.m */; };
+		8B88646024C978EC00203F13 /* ScreenConfigure.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B88645F24C978EC00203F13 /* ScreenConfigure.m */; };
+		8BABBCCB24A33B330016AAE3 /* FirstController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BABBCCA24A33B330016AAE3 /* FirstController.m */; };
+		8BABBCD124A3403D0016AAE3 /* Default-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BABBCCD24A3403D0016AAE3 /* Default-736h@3x.png */; };
+		8BABBCD224A3403D0016AAE3 /* Default-812h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BABBCCE24A3403D0016AAE3 /* Default-812h@3x.png */; };
+		8BABBCD324A3403D0016AAE3 /* Default-896h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BABBCCF24A3403D0016AAE3 /* Default-896h@2x.png */; };
+		8BABBCD424A3403D0016AAE3 /* Default-896h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BABBCD024A3403D0016AAE3 /* Default-896h@3x.png */; };
+		8BABBCD724A343880016AAE3 /* FirstView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BABBCD624A343880016AAE3 /* FirstView.m */; };
 		99424CB10A97600C5533E01F /* Pods_2020dongTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E79A8800FFC39F399B4685C /* Pods_2020dongTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -76,6 +83,10 @@
 		3DA501A9D51ABB72D43103A2 /* Pods-2020dongTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-2020dongTests.debug.xcconfig"; path = "Target Support Files/Pods-2020dongTests/Pods-2020dongTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5353B115972C512B98224B46 /* Pods-2020dong.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-2020dong.debug.xcconfig"; path = "Target Support Files/Pods-2020dong/Pods-2020dong.debug.xcconfig"; sourceTree = "<group>"; };
 		7CBAFC48209613ADC692418D /* Pods_2020dong.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_2020dong.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B69A93424EA6BF70063743A /* SecondView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondView.h; sourceTree = "<group>"; };
+		8B69A93524EA6BF70063743A /* SecondView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondView.m; sourceTree = "<group>"; };
+		8B69A93724EA6E350063743A /* SecondController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondController.h; sourceTree = "<group>"; };
+		8B69A93824EA6E350063743A /* SecondController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondController.m; sourceTree = "<group>"; };
 		8B7884052477C19F004ABF22 /* 2020dong.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 2020dong.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B7884202477C1A4004ABF22 /* 2020dongTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 2020dongTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B7884242477C1A4004ABF22 /* _020dongTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _020dongTests.m; sourceTree = "<group>"; };
@@ -85,12 +96,9 @@
 		8B7884312477C1A4004ABF22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8B7884442478C83A004ABF22 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8B7884452478C83A004ABF22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		8B7884462478C83A004ABF22 /* SceneDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		8B7884472478C83A004ABF22 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		8B7884482478C83A004ABF22 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8B7884492478C83A004ABF22 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		8B78844A2478C83A004ABF22 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8B78844B2478C83A004ABF22 /* SceneDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		8B82336524790D6000588B7B /* BUVerticalAlignLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BUVerticalAlignLabel.m; sourceTree = "<group>"; };
 		8B82336624790D6000588B7B /* BUOfflinePageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BUOfflinePageView.m; sourceTree = "<group>"; };
 		8B82336724790D6000588B7B /* BUCustomNoNetworkView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BUCustomNoNetworkView.m; sourceTree = "<group>"; };
@@ -161,6 +169,16 @@
 		8B8233CB24790D9700588B7B /* NSString+IntValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+IntValue.h"; sourceTree = "<group>"; };
 		8B8233CC24790D9700588B7B /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
 		8B8233D524790E9300588B7B /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		8B88645E24C978EC00203F13 /* ScreenConfigure.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScreenConfigure.h; sourceTree = "<group>"; };
+		8B88645F24C978EC00203F13 /* ScreenConfigure.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScreenConfigure.m; sourceTree = "<group>"; };
+		8BABBCC924A33B330016AAE3 /* FirstController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstController.h; sourceTree = "<group>"; };
+		8BABBCCA24A33B330016AAE3 /* FirstController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstController.m; sourceTree = "<group>"; };
+		8BABBCCD24A3403D0016AAE3 /* Default-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-736h@3x.png"; sourceTree = "<group>"; };
+		8BABBCCE24A3403D0016AAE3 /* Default-812h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-812h@3x.png"; sourceTree = "<group>"; };
+		8BABBCCF24A3403D0016AAE3 /* Default-896h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-896h@2x.png"; sourceTree = "<group>"; };
+		8BABBCD024A3403D0016AAE3 /* Default-896h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-896h@3x.png"; sourceTree = "<group>"; };
+		8BABBCD524A343880016AAE3 /* FirstView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstView.h; sourceTree = "<group>"; };
+		8BABBCD624A343880016AAE3 /* FirstView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstView.m; sourceTree = "<group>"; };
 		9E79A8800FFC39F399B4685C /* Pods_2020dongTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_2020dongTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B06BB72B4B4BC5CA54ED2491 /* Pods-2020dong.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-2020dong.release.xcconfig"; path = "Target Support Files/Pods-2020dong/Pods-2020dong.release.xcconfig"; sourceTree = "<group>"; };
 		B5626C228A94E0D389EFF561 /* Pods-2020dongTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-2020dongTests.release.xcconfig"; path = "Target Support Files/Pods-2020dongTests/Pods-2020dongTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -276,6 +294,8 @@
 			children = (
 				8B8233BD24790D9700588B7B /* AppConfigure.h */,
 				8B8233C024790D9700588B7B /* AppConfigure.m */,
+				8B88645E24C978EC00203F13 /* ScreenConfigure.h */,
+				8B88645F24C978EC00203F13 /* ScreenConfigure.m */,
 				8B8233C124790D9700588B7B /* BUCoreUtility.h */,
 				8B8233C524790D9700588B7B /* BUCoreUtility.m */,
 				8B8233C824790D9700588B7B /* BUSystemVersion.h */,
@@ -298,6 +318,7 @@
 		8B7884402478C83A004ABF22 /* source */ = {
 			isa = PBXGroup;
 			children = (
+				8BABBCCC24A3403D0016AAE3 /* launchimage */,
 			);
 			path = source;
 			sourceTree = "<group>";
@@ -312,6 +333,8 @@
 		8B7884422478C83A004ABF22 /* class */ = {
 			isa = PBXGroup;
 			children = (
+				8BABBCC824A33B170016AAE3 /* firstpage */,
+				8BABBCC724A33B170016AAE3 /* secondpage */,
 			);
 			path = class;
 			sourceTree = "<group>";
@@ -322,11 +345,8 @@
 				8B7884442478C83A004ABF22 /* AppDelegate.h */,
 				8B7884492478C83A004ABF22 /* AppDelegate.m */,
 				8B7884452478C83A004ABF22 /* Assets.xcassets */,
-				8B7884472478C83A004ABF22 /* Default-568h@2x.png */,
 				8B7884482478C83A004ABF22 /* main.m */,
 				8B78844A2478C83A004ABF22 /* Info.plist */,
-				8B78844B2478C83A004ABF22 /* SceneDelegate.h */,
-				8B7884462478C83A004ABF22 /* SceneDelegate.m */,
 				8B8233D524790E9300588B7B /* PrefixHeader.pch */,
 			);
 			path = Other;
@@ -355,11 +375,9 @@
 				8B82336524790D6000588B7B /* BUVerticalAlignLabel.m */,
 				8B82336624790D6000588B7B /* BUOfflinePageView.m */,
 				8B82336724790D6000588B7B /* BUCustomNoNetworkView.m */,
-				8B82336824790D6000588B7B /* BUCustomViewController.h */,
 				8B82336924790D6000588B7B /* BUOfflinePageView.h */,
 				8B82336A24790D6000588B7B /* BUVerticalAlignLabel.h */,
 				8B82336B24790D6000588B7B /* BUCustomNoNetworkView.h */,
-				8B82336C24790D6000588B7B /* BUCustomViewController.m */,
 			);
 			path = BasicWidgets;
 			sourceTree = "<group>";
@@ -403,6 +421,8 @@
 		8B82338524790D6100588B7B /* BaseController */ = {
 			isa = PBXGroup;
 			children = (
+				8B82336824790D6000588B7B /* BUCustomViewController.h */,
+				8B82336C24790D6000588B7B /* BUCustomViewController.m */,
 			);
 			path = BaseController;
 			sourceTree = "<group>";
@@ -432,9 +452,9 @@
 		8B82339024790D6100588B7B /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
+				8B82339324790D6100588B7B /* AFTabBarViewController.h */,
 				8B82339124790D6100588B7B /* AFTabBarViewController.m */,
 				8B82339224790D6100588B7B /* AFTabBarItem.h */,
-				8B82339324790D6100588B7B /* AFTabBarViewController.h */,
 				8B82339424790D6100588B7B /* AFTabBarItem.m */,
 			);
 			path = TabBar;
@@ -469,6 +489,39 @@
 				8B8233A124790D6100588B7B /* AFZoomView.m */,
 			);
 			path = ImageBrowser;
+			sourceTree = "<group>";
+		};
+		8BABBCC724A33B170016AAE3 /* secondpage */ = {
+			isa = PBXGroup;
+			children = (
+				8B69A93424EA6BF70063743A /* SecondView.h */,
+				8B69A93524EA6BF70063743A /* SecondView.m */,
+				8B69A93724EA6E350063743A /* SecondController.h */,
+				8B69A93824EA6E350063743A /* SecondController.m */,
+			);
+			path = secondpage;
+			sourceTree = "<group>";
+		};
+		8BABBCC824A33B170016AAE3 /* firstpage */ = {
+			isa = PBXGroup;
+			children = (
+				8BABBCC924A33B330016AAE3 /* FirstController.h */,
+				8BABBCCA24A33B330016AAE3 /* FirstController.m */,
+				8BABBCD524A343880016AAE3 /* FirstView.h */,
+				8BABBCD624A343880016AAE3 /* FirstView.m */,
+			);
+			path = firstpage;
+			sourceTree = "<group>";
+		};
+		8BABBCCC24A3403D0016AAE3 /* launchimage */ = {
+			isa = PBXGroup;
+			children = (
+				8BABBCCD24A3403D0016AAE3 /* Default-736h@3x.png */,
+				8BABBCCE24A3403D0016AAE3 /* Default-812h@3x.png */,
+				8BABBCCF24A3403D0016AAE3 /* Default-896h@2x.png */,
+				8BABBCD024A3403D0016AAE3 /* Default-896h@3x.png */,
+			);
+			path = launchimage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -579,7 +632,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B78844C2478C83A004ABF22 /* Assets.xcassets in Resources */,
-				8B78844E2478C83A004ABF22 /* Default-568h@2x.png in Resources */,
+				8BABBCD324A3403D0016AAE3 /* Default-896h@2x.png in Resources */,
+				8BABBCD124A3403D0016AAE3 /* Default-736h@3x.png in Resources */,
+				8BABBCD424A3403D0016AAE3 /* Default-896h@3x.png in Resources */,
+				8BABBCD224A3403D0016AAE3 /* Default-812h@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -696,8 +752,11 @@
 				8B8233CE24790D9700588B7B /* UIDevice+Resolutions.m in Sources */,
 				8B8233B824790D6100588B7B /* UILabel+YBAttributeTextTapAction.m in Sources */,
 				8B8233A824790D6100588B7B /* UIImage+SplitImageIntoTwoParts.m in Sources */,
+				8B88646024C978EC00203F13 /* ScreenConfigure.m in Sources */,
+				8B69A93924EA6E350063743A /* SecondController.m in Sources */,
 				8B8233AF24790D6100588B7B /* UIImage+RoundedCorner.m in Sources */,
 				8B8233AB24790D6100588B7B /* UIImage+Scale.m in Sources */,
+				8BABBCD724A343880016AAE3 /* FirstView.m in Sources */,
 				8B8233A724790D6100588B7B /* StyledPageControl.m in Sources */,
 				8B8233B024790D6100588B7B /* UIImage+Resize.m in Sources */,
 				8B8233B924790D6100588B7B /* AFPictureBrowser.m in Sources */,
@@ -712,6 +771,7 @@
 				8B8233A524790D6100588B7B /* BUCustomViewController.m in Sources */,
 				8B8233BB24790D6100588B7B /* AFZoomView.m in Sources */,
 				8B78844F2478C83A004ABF22 /* main.m in Sources */,
+				8B69A93624EA6BF70063743A /* SecondView.m in Sources */,
 				8B8233D324790D9700588B7B /* BUCoreUtility.m in Sources */,
 				8B8233D224790D9700588B7B /* MBProgressHUD+Add.m in Sources */,
 				8B8233A324790D6100588B7B /* BUOfflinePageView.m in Sources */,
@@ -723,7 +783,7 @@
 				8B8233BA24790D6100588B7B /* AFTempConverData.m in Sources */,
 				8B8233AE24790D6100588B7B /* UIImage+Alpha.m in Sources */,
 				8B8233B624790D6100588B7B /* AFTabBarItem.m in Sources */,
-				8B78844D2478C83A004ABF22 /* SceneDelegate.m in Sources */,
+				8BABBCCB24A33B330016AAE3 /* FirstController.m in Sources */,
 				8B8233B524790D6100588B7B /* AFTabBarViewController.m in Sources */,
 				8B8233AC24790D6100588B7B /* UIImage+Rotate.m in Sources */,
 				8B7884502478C83A004ABF22 /* AppDelegate.m in Sources */,
@@ -877,6 +937,7 @@
 			baseConfigurationReference = 5353B115972C512B98224B46 /* Pods-2020dong.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TQULUSYF7A;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/2020dong/Other/PrefixHeader.pch";
@@ -898,6 +959,7 @@
 			baseConfigurationReference = B06BB72B4B4BC5CA54ED2491 /* Pods-2020dong.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TQULUSYF7A;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/2020dong/Other/PrefixHeader.pch";
